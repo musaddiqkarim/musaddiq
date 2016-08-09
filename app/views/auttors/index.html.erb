@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+ <h2 align="center"> Listing Author </h2>
+<table>
+  <thead>
+    <tr>
+      <th>Authorid</th>
+      <th>Authorname</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @auttors.each do |auttor| %>
+      <tr>
+        <td><%= auttor.authorid %></td>
+        <td><%= auttor.authorname %></td>
+       <% if current_user %> <td><%= link_to 'Show', auttor %></td>
+        <td><%= link_to 'Edit', edit_auttor_path(auttor) %></td>
+        <td><%= link_to 'Destroy', auttor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+      <%end%>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<% if current_user %><%= link_to 'New Auttor', new_auttor_path %>
+<%end%>

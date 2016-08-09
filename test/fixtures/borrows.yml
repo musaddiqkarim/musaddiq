@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bmemeber: MyString
+  bbook: MyString
+  bfine: 1
+  book_id: 
+  member_id: 
+  fine_id: 
+
+two:
+  bmemeber: MyString
+  bbook: MyString
+  bfine: 1
+  book_id: 
+  member_id: 
+  fine_id: 

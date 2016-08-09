@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idate: MyString
+  rdate: MyString
+  charges: 1
+
+two:
+  idate: MyString
+  rdate: MyString
+  charges: 1

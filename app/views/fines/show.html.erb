@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Idate:</strong>
+  <%= @fine.idate %>
+</p>
+
+<p>
+  <strong>Rdate:</strong>
+  <%= @fine.rdate %>
+</p>
+
+<p>
+  <strong>Charges:</strong>
+  <%= @fine.charges %>
+</p>
+
+<%= link_to 'Edit', edit_fine_path(@fine) %> |
+<%= link_to 'Back', fines_path %>

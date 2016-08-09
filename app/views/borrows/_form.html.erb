@@ -1,0 +1,41 @@
+<%= form_for(@borrow) do |f| %>
+  <% if @borrow.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@borrow.errors.count, "error") %> prohibited this borrow from being saved:</h2>
+
+      <ul>
+      <% @borrow.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :bmemeber %><br>
+    <%= f.text_field :bmemeber %>
+  </div>
+  <div class="field">
+    <%= f.label :bbook %><br>
+    <%= f.text_field :bbook %>
+  </div>
+  <div class="field">
+    <%= f.label :bfine %><br>
+    <%= f.number_field :bfine %>
+  </div>
+  <div class="field">
+    <%= f.label :book_id %><br>
+    <%= f.text_field :book_id %>
+  </div>
+  <div class="field">
+    <%= f.label :member_id %><br>
+    <%= f.text_field :member_id %>
+  </div>
+  <div class="field">
+    <%= f.label :fine_id %><br>
+    <%= f.text_field :fine_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

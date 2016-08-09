@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bmemeber:</strong>
+  <%= @borrow.bmemeber %>
+</p>
+
+<p>
+  <strong>Bbook:</strong>
+  <%= @borrow.bbook %>
+</p>
+
+<p>
+  <strong>Bfine:</strong>
+  <%= @borrow.bfine %>
+</p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @borrow.book %>
+</p>
+
+<p>
+  <strong>Member:</strong>
+  <%= @borrow.member %>
+</p>
+
+<p>
+  <strong>Fine:</strong>
+  <%= @borrow.fine %>
+</p>
+
+<%= link_to 'Edit', edit_borrow_path(@borrow) %> |
+<%= link_to 'Back', borrows_path %>

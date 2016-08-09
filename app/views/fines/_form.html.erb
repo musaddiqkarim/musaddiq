@@ -1,0 +1,29 @@
+<%= form_for(@fine) do |f| %>
+  <% if @fine.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fine.errors.count, "error") %> prohibited this fine from being saved:</h2>
+
+      <ul>
+      <% @fine.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :idate %><br>
+    <%= f.text_field :idate %>
+  </div>
+  <div class="field">
+    <%= f.label :rdate %><br>
+    <%= f.text_field :rdate %>
+  </div>
+  <div class="field">
+    <%= f.label :charges %><br>
+    <%= f.number_field :charges %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

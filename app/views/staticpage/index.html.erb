@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<li><img src="assets/lib.png" width="1300" height="150" ></li> 
+  <title>LIBRARY MANGEMENT SYSTEM </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 100px;
+  }
+  </style>
+</head>
+<body>
+
+  <h3 align ='center'> WELCOME TO MY WEB </h3>
+<div class="container-fluid" style="background-color:#F44336;color:#fff;height:200px;">
+  <h1 align ='center'> LIBRARY MANGEMENT SYSTEM </h1>
+  <h3> University OF Balochistan </h3>
+  <p>Manual process of keeping student records, book records, account details, managing employee is very difficult. There are various problems also faced by the student in library such as finding any particular book, information whether book is available or not, for what time this book will be available, searching of books using ISBN number etc. To eliminate this manual system, library management system has been developed. Library Management System will handle all the current issues faced by the students and by its admin personnel.</p>
+</div>
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+  <ul class="nav navbar-nav">
+    <li> <%= link_to 'New Member', new_member_path %></li>
+      <li> <%= link_to 'New Book', new_book_path %></li> 
+      <li>  <%= link_to 'New Author', new_auttor_path %> </li>
+      <li><%= link_to 'New Fine', new_fine_path %></li>
+      <li> <%= link_to 'New Borrow', new_borrow_path %></li>
+
+  </ul>
+</nav>
+
+ <div class="container-fluid" style="height:100px">
+<style type="text/css">
+h1 {
+    background-color:lightgreen;
+}
+
+div {
+    background-color: lightblue;
+}
+  img {
+    opacity: 1.4;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+</style>
+<style>
+a {
+    color: hotpink;
+}
+</style>
+</head>
+<body>
+  <li>  <h1 align = 'center'></h1><a href="https://www.google.com.pk">Google</a> </li>
+<li>  <h1 align = 'center'></h1><a href="https://openlibrary.org/">Online  open Library</a></li>
+</style>
